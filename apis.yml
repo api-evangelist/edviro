@@ -1,7 +1,30 @@
 aid: edviro
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/edviro.png
 name: Edviro
-description: Edviro is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Edviro is an AI platform for building operations and energy optimization,
+  aimed at facility managers and building operators of large commercial
+  buildings. It pulls scattered building data - utility bills, smart meters,
+  building management systems (BMS), submeters, sensors, and work-order
+  platforms - into one place, then follows an Ingest, Detect, Act, and Verify
+  workflow: it consolidates the data, catches energy waste and anomalies in
+  real time, dispatches work orders and adjusts setpoints, and proves the
+  resulting savings against meter data and utility bills. The platform also
+  builds a digital twin of each building to simulate capital projects and
+  forecast ROI before purchase, and produces audit-grade Measurement and
+  Verification (M&V) reporting. Edviro is a Y Combinator (Summer 2026) company
+  founded in 2025 and based in San Francisco.
 url: https://raw.githubusercontent.com/api-evangelist/edviro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Energy
+- Building Operations
+- Facilities Management
+- HVAC
+- Energy Efficiency
+- Sustainability
+- Artificial Intelligence
+- Deep Learning
+- Building Automation
+- Measurement and Verification
+- B2B
 apis: []
+common:
+- type: DomainSecurity
+  url: security/edviro-domain-security.yml
+- type: Website
+  url: https://edviroenergy.com
+- type: About
+  url: https://edviroenergy.com/about
+- type: FAQ
+  url: https://edviroenergy.com/faq
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
